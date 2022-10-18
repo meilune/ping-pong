@@ -1,8 +1,12 @@
 body {
   margin: 0;
-  background-color: rgb(39, 39, 39);
+  background-color: #272727;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -15,23 +19,33 @@ canvas {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 500px;
   height: 700px;
-  background-color: rgb(56, 56, 56);
+  background-color: #383838;
   margin-top: -4px;
   z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: whitesmoke;
 }
 
 button {
   cursor: pointer;
-  color: rgb(0, 0, 0);
-  background-color: rgb(195, 195, 195);
+  color: black;
+  background-color: #c3c3c3;
   border: none;
   height: 50px;
   width: 200px;
@@ -41,11 +55,13 @@ button {
 }
 
 button:hover {
-  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 button:focus {
@@ -57,7 +73,6 @@ button:focus {
   canvas {
     margin-top: 100px;
   }
-
   .game-over-container {
     margin-top: -19px;
   }
@@ -70,9 +85,9 @@ button:focus {
     height: 700px;
     margin-top: 50px;
   }
-
   .game-over-container {
     width: 100%;
     height: 700px;
   }
 }
+/*# sourceMappingURL=style.css.map */
